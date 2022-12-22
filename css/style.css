@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*staff*/
+/* estilos.css */
+
+
+.grilla {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+/* estilos.css */
+
+.contenedor {
+    grid-column-end: span 6;
+}
+
+:root {
+    /* Usamos variables de CSS para reutilizar fácilmente los colores */
+    --color-principal: #FADFDB;
+    --color-secundario: darkblue;
+}
+
+body {
+    background-color: black;
+    color:black;
+    /* Para usar esta fuente primero tenés que embeberla en tu ćodigo */
+    /* Podés encontrarla en Google Fonts: https://fonts.google.com/ */
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+.grilla {
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.intro .grilla {
+    align-items: center;
+    background-color: yellow;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.imagen-mujer {
+   
+    border-radius: 2rem;
+    width: 500%;
+}
+
+.titulo {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-block-end: 1rem;
+}
+
+.subtitulo {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.razones {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.tarjeta {
+    border: solid yellow;
+    border-radius: 1rem;
+    box-shadow: rgba(245, 239, 239, 0.945) 0 0 1rem;
+    grid-column-end: span 4;
+    padding: 2rem;
+    float: left;
+}
+.tarjeta:hover{
+  
+    transform:rotate(-3grad)
+}
+
+.tarjeta img {
+    /* Para que la imagen de la tarjeta se vea redonda */
+    border-radius: 50%;
+    max-width: 50rem;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    color: yellow;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+p {
+    color:white;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.ver-mas {
+  
+    grid-column-end: span 8;
+    grid-column-start: 3;
+    width: 100%;
+}
+
+.ahora-que {
+
+    text-align: center;
+}
+.grillafinal .ver-mas{
+    transition: all 0.8% ease;
+  
+    align-content: center;
+    border:solid yellow;
+    border-radius: 1rem;
+}
+.ver-mas:hover{
+    transition:  all 0.6%ease;
+filter:brightness(50%)
+}
+
+a {
+    color: black;
+    background-color: yellow;
+    border: 4px solid yellow;
+    border-radius: 2rem;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin: 3rem auto;
+    text-decoration: none;
+    width: 12rem;
+}
+
+a:hover {
+    background-color: white;
+}
+
+@media (max-width: 48rem) {
+
+    /* Con este selector indicamos que ese estilo debe aplicarse a */
+    /* TODOS los elementos que sean hijos directos de la grilla */
+    .grilla>* {
+        grid-column-end: span 12;
+    }
+
+    /* El primer valor corresponde al hueco entre filas */
+    /* El segundo valor corresponde al hueco entre columnas */
+    .grilla {
+        grid-gap: 2rem 0;
+    }
+}
+
+.ver-mas {
+    grid-column-start: 1;
+}
+
+/* estilos.css */
+
+body {
+    padding: 1rem;
+}
+
+.titulo {
+    font-size: 3rem;
+}
+
+/*
+.staff{
+    background-color: black;
+}
+.h1galeria{
+
+    color: yellow; 
+    text-shadow: 1px 2px 2px white, 0 0 25px yellow , 0 0 5px yellow;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+}
+.galeria{
+    display: grid;
+
+border: solid yellow;
+    margin: 20px 50px;
+    box-shadow: 0 4px 8px lightyellow , 0 6px 20px 0 rgba(238, 234, 234, 0.952));
+    float:left;
+    width: 350px;
+
+
+}
+div.galeria img{
+    width: 100%;
+    height:auto;
+}
+div.galeria:hover{
+    border:1px solid lightyellow;
+    transform:rotate(-3grad)
+}
+div.pie{
+    text-align: center;
+    text-shadow:2px 2px 5px yellow ;
+    padding: 10px;
+}
+*/
