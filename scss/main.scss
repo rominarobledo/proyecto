@@ -1,0 +1,13 @@
+@import "./utils/variables";
+
+@import "./base/base";
+
+@import "./component/navbar";
+@import"./component/footer.scss";
+@import"./component/tarjetas.scss";
+
+@import"./pages/clases";
+@import"./pages/staff";
+@import"./pages/suplemento";
+@import"./pages/contacto";
+@import"./pages/index";
